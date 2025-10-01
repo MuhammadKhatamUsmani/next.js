@@ -15,10 +15,10 @@ const firebaseConfig = {
   measurementId: "G-M5JVNN7FRY",
 };
 
-// ✅ Agar app pehle se bana hua hai to use karo, warna naya banao
+// ✅ Agar app pehle se bana hai to use karo warna naya banao
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
-// ✅ Firebase services export karo
+// ✅ Firebase services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
